@@ -1,0 +1,81 @@
+/* 全体の設定: 背景を黒、文字を白に */
+body {
+    background-color: #1a1a1a; /* ダークな背景 */
+    color: #e0e0e0; /* 明るい文字色 */
+    font-family: 'Consolas', 'Courier New', monospace; /* プログラム風フォント */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* メインコンテナ */
+#app {
+    width: 90%;
+    max-width: 700px;
+    background-color: #2a2a2a; /* やや明るいコンテナ */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.4); /* 緑色の光る影 */
+    text-align: center;
+}
+
+/* タイトルと見出し */
+h1 {
+    color: #00ff00; /* ネオングリーン */
+    text-shadow: 0 0 5px #00ff00;
+    margin-bottom: 5px;
+}
+h2, h3 {
+    color: #00cccc; /* シアン系の色 */
+    margin-top: 20px;
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #008080; /* ティール/シアン系の背景 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #00b3b3;
+    box-shadow: 0 0 10px #00b3b3;
+}
+
+/* ファイル入力フィールド */
+input[type="file"] {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #00cccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+/* 結果表示エリア */
+#resultMessage {
+    white-space: pre-wrap;
+    background-color: #111; /* 非常に暗い背景で結果を強調 */
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #00ff00; /* ネオングリーンの枠線 */
+    min-height: 80px;
+    text-align: left;
+    overflow-x: auto;
+    font-size: 1.1em;
+}
+
+/* 区切り線 */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 0), rgba(0, 255, 0, 0.75), rgba(0, 255, 0, 0));
+    margin: 30px 0;
+}
